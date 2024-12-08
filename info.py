@@ -59,16 +59,16 @@ DELETE_CHANNELS = [int(dch) if id_pattern.search(dch) else dch for dch in enviro
 
 
 # MongoDB information
-DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://mailmetosaikat676:saikat9735@cluster0.2esif.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")   # IF Multiple Database Is False Then Fill Only This Database Url.
+DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://creazybanda84:sampa9735@cluster0.v4nwi.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")   # IF Multiple Database Is False Then Fill Only This Database Url.
 DATABASE_NAME = environ.get('DATABASE_NAME', "techvjclonefilterbot")
 COLLECTION_NAME = environ.get('COLLECTION_NAME', 'vjcollection')
 
-MULTIPLE_DATABASE = bool(environ.get('MULTIPLE_DATABASE', True)) # Set True or False
+MULTIPLE_DATABASE = bool(environ.get('MULTIPLE_DATABASE', False)) # Set True or False
 
 # If Multiple Database Is True Then Fill All Three Below Database Uri Else You Will Get Error.
-O_DB_URI = environ.get('O_DB_URI', "mongodb+srv://workwithsaikat:saikat9735@cluster0.0e5vp.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")   # This Db Is For Other Data Store
-F_DB_URI = environ.get('F_DB_URI', "mongodb+srv://creazybanda84:sampa9735@cluster0.v4nwi.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")   # This Db Is For File Data Store
-S_DB_URI = environ.get('S_DB_URI', "mongodb+srv://creazystore60:sampa9735@cluster0.4xslp.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")   # This Db is for File Data Store When First Db Is Going To Be Full.
+O_DB_URI = environ.get('O_DB_URI', "")   # This Db Is For Other Data Store
+F_DB_URI = environ.get('F_DB_URI', "")   # This Db Is For File Data Store
+S_DB_URI = environ.get('S_DB_URI', "")   # This Db is for File Data Store When First Db Is Going To Be Full.
 
 
 # Premium And Referal Settings
@@ -156,7 +156,7 @@ YEARS = ["1900", "1991", "1992", "1993", "1994", "1995", "1996", "1997", "1998",
 
 
 # Online Stream and Download
-STREAM_MODE = bool(environ.get('STREAM_MODE', False)) # Set True or False
+STREAM_MODE = bool(environ.get('STREAM_MODE', True)) # Set True or False
 
 # If Stream Mode Is True Then Fill All Required Variable, If False Then Don't Fill.
 MULTI_CLIENT = False
@@ -166,7 +166,7 @@ if 'DYNO' in environ:
     ON_HEROKU = True
 else:
     ON_HEROKU = False
-URL = environ.get("URL", "")
+URL = environ.get("URL", "http://vps.hostingup.icu:9019")
 
 
 # Rename Info : If True Then Bot Rename File Else Not
