@@ -88,7 +88,7 @@ PUBLIC_FILE_CHANNEL = environ.get('PUBLIC_FILE_CHANNEL', '') # Public Channel Us
 
 
 # Links
-GRP_LNK = environ.get('GRP_LNK', 'https://t.me/movie_request_House')
+GRP_LNK = environ.get('GRP_LNK', 'https://t.me/Creazy_Movie_Surch_Group')
 CHNL_LNK = environ.get('CHNL_LNK', 'https://t.me/creazy_announcement_hub')
 SUPPORT_CHAT = environ.get('SUPPORT_CHAT', 'leazy_support_group') # Support Chat Link Without https:// or @
 OWNER_LNK = environ.get('OWNER_LNK', 'https://t.me/Leazy_Boy')
